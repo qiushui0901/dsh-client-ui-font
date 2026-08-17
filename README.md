@@ -9,7 +9,7 @@
 插件通过两层方式应用字体：
 
 1. `ctx.theme.overrideTokens('ui-font', …)` 重新生成所有 `--dsw-font-*` token 和两个字体族根变量。
-2. 一段全局 CSS 把字体族应用到 `body`，并用 `html { zoom }` 作为对仍然写死 `font-size` px 的组件的兜底。
+2. 一段全局 CSS 把字体族应用到 `body`，并用 `html { zoom }` 作为对仍然写死 `font-size` px 的组件的兜底。该补丁还会重新启用页面级滚动，避免放大后的界面被裁剪。
 
 ## 安装
 

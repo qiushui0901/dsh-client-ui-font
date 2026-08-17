@@ -9,7 +9,7 @@ A [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) web client
 The plugin composes two layers:
 
 1. `ctx.theme.overrideTokens('ui-font', …)` recomposes every `--dsw-font-*` token and the two font-family roots.
-2. A global CSS patch applies the family to `body` and uses `html { zoom }` as a fallback for components that still hardcode `font-size` in px.
+2. A global CSS patch applies the family to `body` and uses `html { zoom }` as a fallback for components that still hardcode `font-size` in px. The patch also re-enables page-level scrolling so an enlarged UI is not clipped.
 
 ## Install
 
